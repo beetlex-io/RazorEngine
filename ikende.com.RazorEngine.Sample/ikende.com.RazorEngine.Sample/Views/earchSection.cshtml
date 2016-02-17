@@ -1,0 +1,17 @@
+﻿@section item{@{User user = (User)ForeachItem;}
+    <div>
+<p><span>Name:</span>@user.Name</p>
+<p><span>EMail:</span>@user.EMail</p>
+        </div>
+    }
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>@ForeachSection("item",Model)</div>
+</body>
+</html>
